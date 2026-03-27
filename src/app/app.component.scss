@@ -1,0 +1,70 @@
+/* Container */
+.table-container {
+  padding: 20px;
+}
+
+/* Button styling */
+.download-btn {
+  margin-bottom: 15px;
+}
+
+/* Table wrapper (scroll for large data) */
+.table-wrapper {
+  max-height: 400px;
+  overflow: auto;
+  border-radius: 8px;
+}
+
+/* Full width table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Header styling */
+th.mat-header-cell {
+  background-color: #3f51b5;
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+/* Row styling */
+td.mat-cell {
+  font-size: 13px;
+}
+
+/* Zebra striping */
+tr.mat-row:nth-child(even) {
+  background-color: #f5f5f5;
+}
+
+/* Hover effect */
+tr.mat-row:hover {
+  background-color: #e3f2fd;
+  cursor: pointer;
+}
+
+/* Elevation shadow override (optional) */
+.mat-elevation-z8 {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Salary column alignment */
+td.mat-column-salary,
+th.mat-column-salary {
+  text-align: right;
+  padding-right: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  th.mat-header-cell,
+  td.mat-cell {
+    font-size: 12px;
+    padding: 8px;
+  }
+}
